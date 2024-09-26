@@ -1,4 +1,4 @@
-package com.board.service;
+package com.security_board.board.service;
 
 import java.util.List;
 
@@ -8,12 +8,12 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import com.board.domain.Board;
-import com.board.dto.BoardDto;
-import com.board.repository.BoardRepository;
-import com.board.util.Header;
-import com.board.util.Pagination;
-import com.board.util.Search;
+import com.security_board.board.domain.Board;
+import com.security_board.board.dto.BoardDto;
+import com.security_board.board.repository.BoardRepository;
+import com.security_board.board.util.Header;
+import com.security_board.board.util.Pagination;
+import com.security_board.board.util.Search;
 
 import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;

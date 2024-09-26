@@ -1,4 +1,4 @@
-package com.board.domain;
+package com.security_board.board.domain;
 
 import org.springframework.util.Assert;
 import jakarta.persistence.*;

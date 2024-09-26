@@ -1,8 +1,8 @@
-package com.board.dto;
+package com.security_board.board.dto;
 
 import java.time.LocalDateTime;
 
-import com.board.domain.Board;
+import com.security_board.board.domain.Board;
 
 import lombok.*;
 

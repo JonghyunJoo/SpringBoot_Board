@@ -1,4 +1,4 @@
-package com.board.util;
+package com.security_board.board.util;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -8,7 +8,8 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 import java.util.List;
 
-import com.board.dto.BoardDto;
+import com.security_board.board.dto.BoardDto;
+
 
 @Data
 @AllArgsConstructor

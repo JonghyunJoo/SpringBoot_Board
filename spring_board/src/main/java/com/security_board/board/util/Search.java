@@ -1,4 +1,4 @@
-package com.board.util;
+package com.security_board.board.util;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

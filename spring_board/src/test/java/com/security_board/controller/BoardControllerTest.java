@@ -1,4 +1,4 @@
-package com.board.controller;
+package com.security_board.controller;
 
 import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.ArgumentMatchers.anyLong;
@@ -23,11 +23,12 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.board.dto.BoardDto;
-import com.board.service.BoardService;
-import com.board.util.Header;
-import com.board.util.Search;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.security_board.board.dto.BoardDto;
+import com.security_board.board.service.BoardService;
+import com.security_board.board.util.Header;
+import com.security_board.board.util.Search;
 
 @WebMvcTest
 public class BoardControllerTest {

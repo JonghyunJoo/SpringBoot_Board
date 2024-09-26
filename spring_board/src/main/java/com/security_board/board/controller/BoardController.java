@@ -1,14 +1,15 @@
-package com.board.controller;
+package com.security_board.board.controller;
 
 import java.util.List;
 
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
-import com.board.dto.BoardDto;
-import com.board.service.BoardService;
-import com.board.util.Header;
-import com.board.util.Search;
+import com.security_board.board.dto.BoardDto;
+import com.security_board.board.service.BoardService;
+import com.security_board.board.util.Header;
+import com.security_board.board.util.Search;
+
 
 @RestController
 @AllArgsConstructor

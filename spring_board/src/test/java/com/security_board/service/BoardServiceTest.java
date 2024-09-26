@@ -1,4 +1,4 @@
-package com.board.service;
+package com.security_board.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.eq;
@@ -20,12 +20,14 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 
-import com.board.domain.Board;
-import com.board.dto.BoardDto;
-import com.board.repository.BoardRepository;
-import com.board.util.Header;
-import com.board.util.Pagination;
-import com.board.util.Search;
+import com.security_board.board.domain.Board;
+import com.security_board.board.dto.BoardDto;
+import com.security_board.board.repository.BoardRepository;
+import com.security_board.board.service.BoardService;
+import com.security_board.board.util.Header;
+import com.security_board.board.util.Pagination;
+import com.security_board.board.util.Search;
+
 
 @ExtendWith(MockitoExtension.class)
 public class BoardServiceTest {
@@ -172,7 +174,5 @@ public class BoardServiceTest {
         Header<List<BoardDto>> expected = Header.OK(mockBoards.stream().map(BoardDto::fromEntity).toList(), new Pagination(1, 10));
         assertEquals(expected.getData(), response.getData());
         assertEquals(expected.getPagination(), response.getPagination());
-
     }
-
 }
