@@ -12,11 +12,12 @@ services:
             - "3307:3306"
         volumes:
             - board_db_data:/var/lib/mysql
+
     redis_container:
         image: redis:latest
         container_name: redis_test
         ports:
-            - 6379:6379
+            - "6379:6379"
         volumes:
             - ./redis/data:/data
             - ./redis/conf/redis.conf:/usr/local/conf/redis.conf
@@ -24,7 +25,9 @@ services:
             - "name=redis"
             - "mode=standalone"
         restart: always
-        command: redis-server /usr/local/conf/redis.conf		
+        command: redis-server /usr/local/conf/redis.conf
+        extra_hosts:
+            - "host.docker.internal:host-gateway"
 
 volumes:
     board_db_data:
